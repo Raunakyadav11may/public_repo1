@@ -1,0 +1,85 @@
+u --> mean
+o --> standard deviation
+n --> no. of trials
+p --> probability of success
+
+u=np
+
+probability=mean/no. of trials
+
+mean = probability*n trials
+
+to use normal distribution to approximate probability related to binomial distribution , n has to be sufficiently large -->
+
+np >=5
+n-np >=5
+
+what is normal distribution ?
+
+eg. a coin lands head 45 times out of 100 ; there are 2 ways of denoting -->
+
+
+using binomial distribution
+x=45
+using normal distribution with continuityt correction
+44.5<X<45.5
+
+
+Suppose we want to know the probability that a coin lands on heads less than or equal to 43 times during 100 flips.
+
+In this situation we have the following values:
+
+    n (number of trials) = 100
+    X (number of successes) = 43
+    p (probability of success on a given trial) = 0.50
+
+
+step1.
+verify sample size is large enough to use normal approx.
+
+np=100*.5=50
+n-np=100-100*.5=50
+
+both of them are greater than 5
+
+step2.
+determine continuity correction
+
+according to what they have specified,
+x<=43  
+
+x<43.5  --> continuity corrected
+
+step3.
+find mean and standard deviation
+
+u=np =100*.5=50
+o=sqrt(np(1-p))=5
+
+step4.
+find z-score
+
+z=(X-u)/o
+
+z=43.5-50 /5=-1.3
+
+step5.
+find cumulative probability
+
+=.0968
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
